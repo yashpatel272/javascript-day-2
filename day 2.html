@@ -1,0 +1,85 @@
+<html>
+    <head>
+    </head>
+    <script>
+        function AlertDemo()
+        {
+            var fname=prompt("Enter first name:")
+            var lname=prompt("Enter last name:")
+            alert(fname+""+lname);
+        }
+        function AquaTheme()
+        {
+            document.bgColor="aqua";
+        }
+        function BlackTheme()
+        {
+            document.bgColor="black";
+        }
+        function RedTheme()
+        {
+            document.bgColor="red";
+        }
+        function BlueTheme()
+        {
+            document.bgColor="blue";
+        }
+        function add()
+        {
+            const num1=5;
+            const num2=3;
+            const sum=num1+num2;
+            alert(sum);
+            TxtAns.value=sum;
+        }
+        function sub()
+        {
+            const num1=5;
+            const num2=3;
+            const sum=num1-num2;
+            alert(sum);
+            TxtAns.value=sum;
+        }
+        function mul()
+        {
+            const num1=5;
+            const num2=3;
+            const sum=num1*num2;
+            alert(sum);
+            TxtAns.value=sum;
+        }
+        function div()
+        {
+            const num1=5;
+            const num2=3;
+            const sum=num1/num2;
+            alert(sum);
+            TxtAns.value=sum;
+        }function CLR()
+        {
+            
+            const sum=0;
+            
+            TxtAns.value=sum;
+        }
+
+
+    </script>
+    <body> 
+        <input type="button" value="alert" onclick="AlertDemo();"/> 
+        <div style="text-align: center;">
+        <input type="button" onclick="AquaTheme()"; width=100px height=100px style="background-color: aqua;">
+        <input type="button" onclick="BlackTheme()"; width=100px height=100px style="background-color:black;">
+        <input type="button" onclick="BlueTheme()" width=100px height=100px style="background-color: blue;" >
+        <input type="button" onclick="RedTheme()"; width=100px height=100px style="background-color: red;"> <br>
+         
+        <input type="text" value="0" width="200px" id="TxtAns" style="background-color: aqua;"/><br>
+        <input type="button" value="+" id="ADD" onclick="add()" style="background-color:beige;">
+        <input type="button" value="-" id="SUB" onclick="sub()" style="background-color:beige;">
+        <input type="button" value="*" id="MUL" onclick="mul()" style="background-color:beige;">
+        <input type="button" value="/" id="DIV" onclick="div()" style="background-color:beige;">
+        <input type="button" value="C" id="CLR" onclick="CLR()" style="background-color:beige;">
+     </body>
+    </div>
+
+</html>
